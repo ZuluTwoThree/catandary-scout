@@ -1,0 +1,13 @@
+2025-12-30 20:51 | Init | Created system changelog to track architectural transformations and traceability.
+2025-12-30 20:53 | Cleanup | Removed lovable-tagger from dependencies and Vite config to decouple Lovable tooling.
+2025-12-30 20:53 | Docs | Rewrote README for VS Code and Docker-based local development guidance.
+2025-12-30 20:53 | Dev Proxy | Added Vite dev proxy configuration to route /api to the backend proxy for local multi-LLM integration.
+2025-12-30 21:02 | Services | Extracted auth and scouting logic into src/services to decouple UI from implementation details.
+2025-12-30 21:02 | Scouting UI | Rebuilt scouting flow for multi-model results, compare view, and streaming-style summaries using TanStack Query state handling.
+2025-12-30 21:02 | Resilience | Added React error boundary component to isolate failures in per-model modules.
+2025-12-30 21:02 | Routing | Enabled React.lazy + Suspense for route-level code-splitting performance gains.
+2025-12-30 21:02 | i18n | Moved translations into public/locales JSON and switched LanguageContext to async loading.
+2025-12-30 21:02 | Docker | Added multistage frontend Dockerfile + nginx config and docker-compose with frontend, backend proxy, and Qdrant.
+2025-12-30 21:02 | Backend | Added Node.js proxy skeleton for multi-LLM routing with a health endpoint.
+2025-12-30 21:02 | Env | Added .env.example covering frontend, backend, and vector DB configuration.
+2025-12-30 21:04 | Branding | Updated HTML metadata to remove Lovable references and align with Catandary identity.
