@@ -23,7 +23,7 @@ const getEndpoint = () => {
   if (!base) {
     return "/api/scouting";
   }
-  return `${base.replace(/\\/$/, "")}/scouting`;
+  return `${base.replace(/\/$/, "")}/scouting`;
 };
 
 const mockResults = (query: string, models: LlmProvider[]): ScoutingResult[] => {
